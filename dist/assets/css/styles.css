@@ -1,0 +1,654 @@
+/*===== GOOGLE FONTS =====*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('./styles.css.map');
+
+/*===== VARIABLES CSS =====*/
+:root {
+--r0: 3rem;
+
+/*========== Colors ==========*/
+--q9: #0B0A0A;
+--ee: #403A3A;
+--k2: #707070;
+--a14: #FAFAFA;
+--h11: #F0EFEF;
+--dd: #FCFCFC;
+
+/*========== Font and typography ==========*/
+--u13: 'Poppins', sans-serif;
+--h1-font-size: 1.5rem;
+--h2-font-size: 1.25rem;
+--h3-font-size: 1rem;
+--jc: .938rem;
+--df: .875rem;
+--k4: .813rem;
+
+/*========== Font weight ==========*/
+--l3: 500;
+--v6: 600;
+
+/*========== Margenes ==========*/
+--mb-1: .5rem;
+--mb-2: 1rem;
+--mb-3: 1.5rem;
+
+/*========== z index ==========*/
+--g10: 10;
+--c5: 100;
+}
+
+/*========== BASE ==========*/
+*,::before,::after {
+box-sizing: border-box;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+
+/*========== Variables Dark theme ==========*/
+
+
+/*========== Button Dark/Light ==========*/
+.p43 {
+position: absolute;
+right: 0;
+top: 2.2rem;
+display: flex;
+color: var(--ee);
+font-size: 1.2rem;
+cursor: pointer;
+}
+
+.p43:hover {
+color: var(--q9);
+}
+
+#theme-checkbox {
+display: none;
+}
+
+body:has( > .w2a.w3f .o2b .a2f .c3b #theme-checkbox:checked) {
+--q9: #F2F2F2;
+--ee: #BFBFBF;
+--a14: #212121;
+--h11: #181616;
+--dd: #2B2B2B;
+}
+
+
+/*========== Font size variables to scale cv ==========*/
+body.s3e {
+--h1-font-size: 0.938rem;
+--h2-font-size: 0.938rem;
+--h3-font-size: 0.875rem;
+--jc: 0.813rem;
+--df: 0.75rem;
+--k4: 0.688rem;
+}
+
+
+/*========== Generate PDF button ==========*/
+.oe {
+display: none;
+position: absolute;
+top: 2.2rem;
+left: 0;
+font-size: 1.2rem;
+color: var(--ee);
+cursor: pointer;
+}
+
+.oe:hover {
+color: var(--q9);
+}
+
+/*========== Classes modified to reduce size and print on A4 sheet ==========*/
+.s3e .p43,
+.s3e .oe {
+display: none;
+}
+
+.s3e .w3f {
+max-width: 595px;
+}
+
+.s3e .e32 {
+padding: 1.5rem 0 0.10rem;
+}
+
+.s3e .y34 {
+margin-bottom: 0.75rem;
+}
+
+.s3e .a2f,
+.s3e .v39 {
+padding: 0 1rem;
+}
+
+.s3e .l5 {
+width: 90px;
+height: 90px;
+}
+
+.s3e .y19 {
+gap: 1.5rem;
+}
+
+.s3e .a3d {
+gap: 0.25rem;
+}
+
+.s3e .g42,
+.s3e .g3a {
+gap: 0.75rem;
+}
+
+.s3e .k2,
+.s3e .p1e,
+.s3e .j27 {
+font-size: 1rem;
+}
+
+.s3e .d15,
+.s3e .n3,
+.s3e .k1 {
+gap: 1rem;
+}
+.s3e .s37,
+.s3e .p1d {
+padding-right: 0.5rem;
+}
+
+.s3e .a44,
+.s3e .ld {
+width: 11px;
+height: 11px;
+margin-top: 0.22rem;
+}
+
+.s3e .q14,
+.s3e .f1a {
+width: 1px;
+height: 110%;
+transform: translate(5px, 0);
+}
+
+.s3e .p4,
+.s3e .t1b {
+gap: 0.25rem;
+}
+
+.s3e .q45 {
+margin-bottom: var(--mb-1);
+}
+
+.s3e .yc {
+column-gap: 2.5rem;
+}
+
+.s3e .sa {
+grid-template-columns: repeat(1, 1fr);
+}
+
+
+
+body {
+margin: 0 0 var(--r0) 0;
+padding: 0;
+font-family: var(--u13);
+font-size: var(--jc);
+background-color: var(--dd);
+color: var(--ee);
+}
+h1,h2,h3,ul,p {
+margin: 0;
+}
+
+h1,h2,h3 {
+color: var(--q9);
+font-weight: var(--l3);
+}
+ul {
+padding: 0;
+list-style: none;
+}
+
+a {
+text-decoration: none;
+}
+
+img {
+max-width: 100%;
+height: auto;
+}
+
+/*========== CLASS CSS ==========*/
+.e32 {
+padding: 1.5rem 0;
+}
+
+.y34 {
+font-size: var(--h2-font-size);
+color: var(--q9);
+font-weight: var(--v6);
+text-transform: uppercase;
+letter-spacing: .35rem;
+text-align: center;
+margin-bottom: var(--mb-3);
+}
+
+
+/*========== LAYOUT ==========*/
+.w3f {
+max-width: 968px;
+width: calc(100% - 3rem);
+margin-left: var(--mb-3);
+margin-right: var(--mb-3);
+}
+
+.f3c {
+display: grid;
+gap: 1.5rem;
+}
+
+.a20 {
+width: 100%;
+position: fixed;
+bottom: 0;
+left: 0;
+z-index: var(--c5);
+background-color: var(--dd);
+box-shadow: 0 -1px 4px rgba(0,0,0,0.1);
+transition: 0.3s;
+}
+
+
+/*========== NAV ==========*/
+.a24 {
+height: var(--r0);
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+@media screen and (max-width: 968px) {
+.a10 {
+position: fixed;
+bottom: -100%;
+left: 0;
+width: 100%;
+padding: 2rem 1.5rem;
+background-color: var(--dd);
+box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+border-radius: 1rem 1rem 0 0;
+z-index: var(--c5);
+transition: 0.3s;
+}
+}
+
+.y35,
+.o13 {
+color: var(--q9);
+font-weight: var(--l3);
+}
+.o13,
+.obfuscatecss\.com {
+font-size: 1.2rem;
+cursor: pointer;
+}
+
+#toggle-menu {
+display: none;
+}
+
+.u25 {
+text-align: center;
+}
+
+.p40 {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 2rem;
+}
+
+.q11 {
+display: flex;
+flex-direction: column;
+font-size: var(--k4);
+color: var(--k2);
+font-weight: var(--l3);
+}
+
+.q11:hover {
+color: var(--q9);
+}
+
+.e38 {
+font-size: 1.2rem;
+margin-bottom: var(--mb-1);
+}
+
+/* Show menu */
+#toggle-menu:checked ~ .a10 {
+bottom: var(--r0);
+}
+
+/* Active menu link */
+
+
+/*========== HOME ==========*/
+.c3b {
+position: relative;
+}
+
+.y19 {
+gap: 3rem;
+}
+
+.a3d {
+gap: 0.5rem;
+text-align: center;
+}
+
+.l5 {
+width: 120px;
+height: 120px;
+border-radius: 50%;
+justify-self: center;
+margin-bottom: var(--mb-1);
+}
+
+.i1f {
+font-size: var(--h1-font-size);
+}
+
+.j28 {
+font-size: var(--df);
+margin-bottom: var(--mb-1);
+}
+
+.g42 {
+gap: 1rem;
+}
+
+.g17 {
+display: flex;
+align-items: center;
+font-size: var(--df);
+word-wrap: anywhere;
+}
+
+.k2 {
+font-size: 1.2rem;
+margin-right: 0.25rem;
+}
+
+.e9 {
+display: inline-block;
+border: 2px solid var(--ee);
+color: var(--q9);
+padding: 1rem 2rem;
+border-radius: 0.25rem;
+transition: 0.3s;
+font-weight: var(--l3);
+margin-top: var(--mb-3);
+}
+
+.e9:hover {
+background-color: var(--ee);
+color: var(--a14);
+}
+
+
+/*========== SOCIAL ==========*/
+.g3a {
+grid-template-columns: max-content;
+gap: 1rem;
+}
+
+.q2d {
+display: inline-flex;
+align-items: center;
+font-size: var(--df);
+color: var(--ee);
+
+}
+
+.q2d:hover {
+color: var(--q9);
+}
+
+.p1e {
+font-size: 1.2rem;
+margin-right: 0.25rem;
+}
+
+/*========== PROFILE ==========*/
+.e41 {
+text-align: justify;
+
+}
+
+
+/*========== EDUCATION AND EXPERIENCE ==========*/
+.tb,
+.y30 {
+display: flex;
+}
+
+.s37,
+.p1d {
+padding-right: 1rem;
+}
+
+.a44,
+.ld {
+position: relative;
+display: block;
+width: 16px;
+height: 16px;
+background-color: var(--k2);
+border-radius: 50%;
+margin-top: 0.25rem;
+}
+
+.q14,
+.f1a {
+display: block;
+width: 2px;
+height: 110%;
+background-color: var(--k2);
+transform: translate(7px, 0);
+}
+
+.p4
+,.t1b {
+gap: 0.5rem;
+}
+
+.j22,
+.k0 {
+font-size: var(--h3-font-size);
+}
+
+.d2e,
+.q1c {
+font-size: var(--df);
+color: var(--q9);
+}
+
+.m2c {
+font-size: var(--k4);
+}
+
+/*========== SKILLS AND LANGUAGES ==========*/
+.f29,
+.h23 {
+grid-template-columns: repeat(2, 1fr);
+gap: 0;
+}
+
+.q45,
+.m16 {
+display: flex;
+align-items: center;
+margin-bottom: var(--mb-3);
+}
+
+.s6,
+.h7 {
+display: inline-block;
+width: 5px;
+height: 5px;
+background-color: var(--ee);
+border-radius: 50%;
+margin-right: 0.75rem;
+}
+
+/*========== CERTIFICATES ==========*/
+.x36 {
+font-size: var(--h3-font-size);
+margin-bottom: var(--mb-1);
+
+}
+
+/*========== REFERENCES ==========*/
+.zf {
+gap: 0.25rem;
+}
+
+.v18 {
+color: var(--k2);
+}
+
+.v18,
+.zf {
+font-size: var(--df);
+}
+
+.x26 {
+font-size: var(--h3-font-size);
+}
+
+
+
+/*========== INTERESTS ==========*/
+.yc {
+grid-template-columns: repeat(3, 1fr);
+margin-top: var(--mb-2);
+}
+
+.e12 {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.j27 {
+font-size: 1.5rem;
+color: var(--k2);
+margin-bottom: 0.25rem;
+}
+
+/* Scroll top */
+.e31 {
+position: fixed;
+right: 1rem;
+bottom: 5rem;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0.3rem;
+background-color: var(--h11);
+border-radius: 0.4rem;
+z-index: var(--g10);
+transition: 0.4s;
+/* visibility: hidden; */
+}
+
+.w8 {
+font-size: 1.2rem;
+color: var(--ee);
+}
+
+.a33 {
+visibility: visible;
+bottom: 5rem;
+}
+
+/*========== MEDIA QUERIES ==========*/
+/* For small devices, menu two columns */
+@media screen and (max-width: 320px) {
+.p40 {
+grid-template-columns: repeat(2, 1fr);
+gap: 1rem 0.5rem;
+}
+}
+
+@media screen and (min-width: 968px) {
+body {
+margin: 3rem 0;
+}
+
+.w3f {
+margin-left: auto;
+margin-right: auto;
+}
+
+.a20,
+.e31 {
+display: none;
+}
+
+.o2b {
+display: grid;
+grid-template-columns: 0.5fr 1fr;
+background-color: var(--a14);
+box-shadow: 0 0 8px rgba(13, 12, 12, 0.15);
+}
+
+.a2f {
+background-color: var(--h11);
+}
+
+.a2f,
+.v39 {
+padding: 0 1.5rem;
+}
+
+.oe {
+display: inline-block;
+}
+
+.y34,
+.e41 {
+text-align: initial;
+}
+
+.y19 {
+gap: 1.5rem;
+}
+
+.e9 {
+display: none;
+}
+
+.sa {
+grid-template-columns: repeat(2, 1fr);
+}
+
+.h23 {
+grid-template-columns: repeat(3, max-content);
+column-gap: 3.5rem;
+}
+
+.yc {
+grid-template-columns: repeat(4, max-content);
+column-gap: 3.5rem;
+}
+}
+
+
+/* Classes modified for large screen size */
